@@ -1,0 +1,106 @@
+body{ /*Estilo do "corpo" da página*/
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font: arial;
+    font-size: 20px;
+}
+
+p{ /*Estilo dos paragrafos(p)*/
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+.links{
+    color:rgb(162, 0, 255);
+    font-size: 30px;
+    font:bold;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.tile {
+    border: 1px solid rgb(0, 0, 0);
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX { /*Jogador X, jogo da velha*/
+    color: #1100ff;
+}
+
+.playerO { /*Jogador O, jogo da velha*/
+    color: #9500ff;
+}
+
+.coresRGB{ /*Botões que mudam a cor do "background"*/
+    margin-top: 2%;
+    text-align: center;
+}
+
+button{ /*Estilo do botão, questão 30*/
+    padding: 15px;
+}
+
+input{
+    padding: 15px;
+}
+
+.img{
+    height: 60px;
+    width: 100px;
+    margin: 10px;
+}
+#img{
+    text-align: center;
+    display: inline-block;
+}
+
+.bk{
+    background-color: #d7d7d7;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.bk p{
+    padding-top: 40%;
+    text-align: center;
+}
+
+#select img{
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+}
+@media only screen and (max-device-width: 800px) {
+    #select img{
+        height: auto;
+        width: 70%;
+    }
+    .bk{
+        height: auto;
+        width: 70%;
+    }
+    .bk p{
+        margin: 0 auto;
+        padding-bottom: 18%;
+        padding-top: 18%;
+    }
+}

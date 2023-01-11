@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"> <!--Ligando o css com a página-->
+
+    <script src="app.js" defer></script> <!--Ligando o js com a página-->
+
+    <title>JS 2</title> <!--Título da página-->
+
+</head><!--Cabeçalho do site-->
+
+<body>
+    <!-- Fazer 4, 7, 9, 14, 17, 22, 30 e 31. -->
+    
+    <!-- Questão 4 -->
+    <h2 class="links">Questão 4</h2>
+    <!-- Enunciado da questão -->
+    <p>Refaça o script anterior, mas agora pergunte ao usuário quantos números ele deseja inserir no array. Depois, o
+        usuário vai preenchendo elemento por elemento do vetor. Ao final, exiba o array e o array ao contrário
+        (generalização do script anterior).</p>
+
+    <input id="valorA" type="number"> <!--Primeiro valor fornecido-->
+
+    <input id="valorB" type="number"> <!--Segundo valor fornecido-->
+
+    <input id="valorC" type="number"><br> <!--Terceiro valor fornecido-->
+
+    <button id="bt3">Enviar</button> <!--Botão que envia os valores-->
+
+    <p>Valores Invertidos:
+        <p class="resultP"></p> <!--Local onde será mostrado o resultado com o innerHTML-->
+    </p>
+    <!-- Fim da Questão 4 -->
+
+    <!-- Questão 7 -->
+    <h2 class="links">Questão 7</h2>
+    <!-- Enunciado da questão -->
+    <p>Crie um script que pede um inteiro positivo para o usuário. Em seguida, popule uma array com os números de
+        Fibonacci, na hora de somar com os termos anteriores, some com elementos anteriores do array.</p>
+    
+        <form>
+            <label for="num">Digite um número:</label> <!--Mensagem do Input abaixo-->
+            
+            <input type="number" name="num" id="num"> <!--Input que o usuário fornecerá um valor-->
+            
+            <button type="button" id="enviar">Enviar</button> <!--Botão que envia os dados-->
+        </form>
+
+    <div id="resultado"></div>
+    <!-- Fim da Questão 7 -->
+
+    <!-- Questão 9 -->
+    <h2 class="links">Questão 9</h2>
+    <!-- Enunciado da questão -->
+    <p>Usando matriz (array de array), crie o jogo da velha. Inicialmente, as posições são variáveis vazias. O usuário
+        fornece a linha e a coluna e clica num botão, então é marcado no tabuleiro X ou O (se for o jogador 1 ou jogador2).</p>
+    
+    <section class="title">
+        <h1>Jogo da Velha</h1>
+    </section>
+    
+    <section class="display">
+        Jogador <span class="display-player playerX">X</span>
+    </section>
+    
+    <section class="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </section>
+    
+    <section class="display announcer hide"></section>
+    
+    <section class="controls">
+        <button id="reset">Reset</button>
+    </section>
+    <!-- Fim da Questão 9 -->
+
+    <!-- Questão 14 -->
+    <h2 class="links">Questão 14</h2>
+    <!-- Enunciado da questão -->
+    <p>Observem o seguinte array: estados( "GO", "MG", "SP", "RJ", "AM", "PA" ). Preencha em um objeto “select” em um formulário na tela com os elementos em ordem alfabética.</p>
+    <form action="">
+    <p>Bagunçado: GO, MG, SP, RJ, AM, PA</p>
+
+    <p>Arrumado: <select class="Resultado14"></select>
+    </p>
+    </form>
+    <!-- Fim da Questão 14 -->
+    
+    <!-- Questão 22 -->
+    <h2 class="links">Questão 22</h2>
+    <!-- Enunciado da questão -->
+    <p>Crie uma página com uma lista (select) com 4 opções de cores. Ao selecionar uma opção de cor, altere o plano de fundo da página para a cor específica</p>
+    
+    <div class="coresRGB">  <!--Div com os botões e cores, centralização com css-->
+        <button class="colorR">Red</button>     <!--Botão da cor Vervelho-->
+    
+        <button class="colorG">Green</button>   <!--Botão da cor Verde-->
+    
+        <button class="colorB">Blue</button>    <!--Botão da cor Azul-->
+    
+        <button class="colorReset">Reset</button> <!--Botão de reset de cor-->
+    </div>
+    <!-- Fim da Questão 22  -->
+
+    <!-- Questão 30 -->
+    <h2 class="links">Questão 30</h2>
+    <p>Crie uma página contendo um determinado texto. Acima do texto, inclua um formulário com um campo e um
+        botão Pesquisar. Ao digitar uma palavra dentro do campo e pressionar o botão Pesquisar, conte quantas
+        ocorrências daquela palavra existem ao longo do texto e destaque cada ocorrência com um plano de fundo
+        amarelo (conforme esse exemplo: palavra). Caso a palavra não exista no texto, exiba uma mensagem abaixo do
+        campo de texto indicando que a busca não retornou nenhum resultado.</p>
+        <input id="input" type="text">
+        <button onclick="achaPalavra()">Pesquisar</button>
+        <p id="p">Lorem ipsum dolor sit amet. Qui perferendis exercitationem aut explicabo ullam ea obcaecati numquam ut illum impedit. Quo animi rerum eos nobis illo aut minima exercitationem non dignissimos velit et provident sapiente ad nihil amet sed voluptatem ducimus? </p>
+    <!-- Fim da Questão 30 -->
+
+    <!-- Questão 31 -->
+    <h2 class="links">Questão 31</h2>
+    <p>Crie uma galeria com MxN miniaturas de imagens. Ao clicar em cada imagem, a imagem deverá aparecer ampliada
+        em uma DIV específica da página.</p>
+    <div id="img">
+        <div id="select">
+            <div class="bk">
+                <p>clique e a imagem irá aparecer aqui</p>
+            </div>
+        </div>
+        <img id="1" class="img" onclick="abreImg(1)" src="https://marquesfernandes.com/wp-content/uploads/2020/01/1555172.jpg">
+        <img id="2" class="img" onclick="abreImg(2)" src="https://images7.alphacoders.com/679/679140.png">
+        <img id="3" class="img" onclick="abreImg(3)" src="https://files.passeidireto.com/77fe28d8-3278-4b4b-81f6-dde4b1ba81d8/77fe28d8-3278-4b4b-81f6-dde4b1ba81d8.jpeg">
+        <img id="4" class="img" onclick="abreImg(4)" src="https://images.hdqwalls.com/wallpapers/republic-of-gamers-8-bit-3n.jpg">
+        <img id="5" class="img" onclick="abreImg(5)" src="https://i.pinimg.com/736x/91/b1/77/91b1773c8fa312d0af5773e910b53616.jpg">
+    </div>
+    <!-- Fim da Questão 31 -->
+    
+    <!-- Questão 16 -->
+    <h2 class="links">Questão 16</h2>
+    <!-- Enunciado da questão -->
+    <p>Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve aparecer na tela.</p>
+    
+    <button class='botao' id='btnCriar'>Gerar novo</button>
+    
+    <button class="limpar">Excluir Quadrados</button>
+
+    <div id="app">
+        <div class="box"></div>
+    </div>
+    <!-- Fim da Questão 16 -->
+
+    <!-- Questão 17 -->
+    <h2 class="links">Questão 17</h2>
+    <!-- Enunciado da questão -->
+    <p>Crie os quadrados na questão 16 e depois passe o mouse sobre os quadrados para alterar as cores. </p>
+    <!-- Fim da Questão 17 -->
+
+</body>
+</html>
