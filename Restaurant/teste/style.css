@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 58%;
+    height: 75%;
+    background: #fff;
+    box-shadow: 0px 0px 50px -1px rgb(0, 0, 0, .5);
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 250px;
+    /* 340 */
+    height: 280px;
+    background: #282828;
+    transition: 1s linear;
+}
+
+header .logo h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+header .logo img {
+    width: 200px;
+    margin: 50px 0px 0px 25px;
+    filter: drop-shadow(0px 0px 20px rgb(0, 0, 0, .6));
+}
+
+header nav {
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .menu {
+    font-size: 25px;
+    color: #000;
+}
+
+header nav .right_menu {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right_menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav .right_menu ul li {
+    padding: 3px 14px;
+}
+
+header nav .right_menu ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    color: #000;
+    transition: .3s linear;
+}
+
+header nav .right_menu ul li a::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #dc1313;
+    border-radius: 50%;
+    bottom: -5px;
+    left: 45%;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+header nav .right_menu ul li a:hover {
+    color: #dc1313;
+}
+
+header nav .right_menu ul li a:hover::before {
+    opacity: 1;
+}
+
+header nav .right_menu .user_cart {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+header .left_menu {
+    /* Aqui é 200px */
+    width: 20px;
+    height: 90%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .left_menu a {
+    margin: 30px 0px;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #000;
+    font-weight: 600;
+    transition: .3s linear;
+    transform: rotate(-90deg);
+}
+
+header .left_menu a:hover {
+    color: #dc1313;
+}
+
+header .right_menu .user_cart .cart {
+    margin-right: 20px;
+}
+
+header .right_menu .user_cart button {
+    border: none;
+    background-color: transparent;
+    color: #000;
+}
+
+header section {
+    width: 97%;
+    height: 90%;
+    /* border: 1px solid greenyellow; */
+}
+
+header section .content {
+    position: relative;
+    left: 390px;
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: 1s linear;
+}
+
+header section .content h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: 1s linear;
+}
+
+header section .content p {
+    font-size: 10px;
+    font-weight: 600;
+    width: 290px;
+    word-break: break-all;
+}
+
+header section .content .price_order {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header section .content .price_order .price h2 {
+    font-size: 20px;
+    color: #dc1313;
+    line-height: 18px;
+}
+
+header section .content .price_order .price p {
+    font-size: 6px;
+    width: 50px;
+    /* border: 1px solid #000; */
+}
+
+header section .content .price_order button {
+    padding: 4px 20px;
+    background: #121213;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+header section .cards {
+    width: 90%;
+    height: 140px;
+    /* border: 1px solid #000; */
+    position: relative;
+    top: 10%;
+    left: 30px;
+
+    /* padding-left: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    transition: 1s linear;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #cac6c6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header section .cards .card {
+    position: relative;
+    min-width: 130px;
+    min-height: 130px;
+    margin-right: 25px;
+    border-radius: 0px 10px 10px 10px;
+    display: block;
+}
+
+header section .cards .card:nth-last-child(1) {
+    margin-right: 30px;
+}
+
+header section .cards .card:nth-child(1) {
+    margin-left: 30px;
+}
+
+header section .cards .card .dis {
+    width: 80px;
+    position: relative;
+}
+
+header section .cards .card h4 {
+    position: absolute;
+    top: 10px;
+    margin-left: 85px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+header section .cards .card h5 {
+    color: #fff;
+    font-size: 12px;
+    font-family: 500;
+    padding: 0px 10px;
+    margin-top: 1px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+header section .cards .card button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+header section .cards .card p {
+    display: none;
+}
+
+.request{
+    position: relative;
+    color:#000;
+    height: 75%;
+    width: 350px;
+    background: lightgray;
+    display: none;   
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.request div{
+    display: flex;
+    margin-left: 55px;
+    margin-top: 40px;
+    max-height: 13px;
+}
+
+.request div h3{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.request div h4{
+    font-size: 12px;
+    color: red;
+}
+.request div button{
+    top: 50px;
+    cursor: pointer;
+    background-color: red;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 10px;
+    padding: 10px;
+}
+
+.request h5{
+    position: absolute;
+    font-size: 20px;
+    margin-left: 55px;
+}
+
+.request h5 span{
+    color: red;
+    font-size: 18px;
+}
+
+.food-cat-PF{
+    background-color: #282828;
+}
+.food-cat-CU{
+    background-color: #998627;
+}
+.food-cat-NF{
+    background-color: #00FF7F;
+}
+.food-cat-NL{
+    background-color: #4E2F2F;
+}
+.food-cat-DS{
+    background-color: #3333FF;
+}
+.food-cat-SP{
+    background-color: #663366;
+}
+.food-cat-L{
+    background-color: #9999FF;
+}
+.food-cat-VG{
+    background-color: #CDD1E5;
+}
+.food-cat-DK{
+    background-color: #A0522D;
+}
+.food-cat-V{
+    background-color: #8A2BE2;
+}
+.food-cat-F{
+    background-color: #000;
+}
+.food-cat-C{
+    background-color: #D8BFD8;
+}
+.food-cat-A{
+    background-color: mediumaquamarine;
+}
+.food-cat-B{
+    background-color: indianred;
+}

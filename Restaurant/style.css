@@ -1,0 +1,54 @@
+body {
+    background-color: #cd001b;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .h1_cabecalho, .h1_cabecalho > a { 
+    display: inline-block;
+    text-decoration: none;
+} */
+
+/* .h1_cabecalho > a:hover {
+    text-decoration: underline;
+} */
+
+#menu_pratos {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* display: inline-block; */
+
+}
+
+.prato_div {
+    box-shadow: 3px 2.5px rgb(33, 33, 33);
+    max-width: 22%;
+    height: 100%;
+    background-color: #fff;
+    display: inline-block;
+    padding-top: 18px;
+    margin: 15px;
+}
+
+.prato_imagem {
+    width: 60%;
+    height: 50%;
+}
+
+.prato_titulo {
+    color: #cd001b;
+}
+
+.prato_descricao {
+    font-family: Verdana;
+    color: #000;
+    text-align: center;
+    height: 1%;
+    font-size: 15px;
+}
+
+.prato_preco {
+    color: #000;
+    padding-top: 10%;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <title>Aplicativo de Controle Financeiro</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Verly's Restaurant</h1>
+            <!-- Imagem do prato principal: Pegar com JSONs -->
+            <img src="" alt="" id="poster">
+        </div>
+        <nav>
+            <i class="bi menu bi-list"></i>
+            <div class="right_menu">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Hotline</a></li>
+                </ul>
+                <div class="user_cart">
+                    <button id="carrinho"><i class="bi cart bi-cart-dash-fill"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="left_menu">
+            <a href="#">process</a>
+            <a href="#">design</a>
+            <a href="#">material</a>
+        </div>
+        <section>
+            <div class="content">
+                <!-- COLOCAR AQUI APENAS UM PRATO COM A REQUISIÇÃO FEITA. -->
+                <!-- EXEMPLO: OBS, USE AS MESMAS CLASSES ABAIXO -->
+                <h2 id="title"></h2>
+                <p id="details"></p>
+                <div class="price_order">
+                    <div class="price">
+                        <h2 id="price_cont"></h2>
+                        <p>total payable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- COLOCAR AQUI O PRATO COM A REQUISIÇÃO FEITA.
+                EXEMPLO: OBS, USE AS MESMAS CLASSES ABAIXO -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div> 
+        </section>
+    </header>
+    <div class="request">
+        <div id="total"></div>
+    </div> 
+</body>
+<script src="./script.js"></script>
+<script src="app.js"></script>
+</html>
