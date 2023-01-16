@@ -8,6 +8,10 @@ body{
 header {
     overflow: hidden;
     padding: 20px 40px;
+    position: fixed;
+    margin-top: -10%;
+    background-color: rgba(22, 22, 22, 0.698);
+    width: 90%;
 }
   
 header a {
@@ -22,7 +26,7 @@ header a {
 }
   header a.logo {
     font-size: 20px;
-}
+  }
   
   header :hover {
     border-radius: 10%;
