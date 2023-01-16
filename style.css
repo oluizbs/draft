@@ -1,6 +1,6 @@
 body{
-    background-image: url("background.jpg");
-    font-family: Garamond;
+    background-color: rgb(22, 22, 22);
+    font-family: "Courier";
     margin: 0;
     color: white;
 }
@@ -12,7 +12,7 @@ header {
   
 header a {
     float: left;
-    color: white;
+    color: lime;
     text-align: center;
     padding: 15px;
     text-decoration: none;
@@ -24,15 +24,52 @@ header a {
     font-size: 20px;
 }
   
-  header a:hover {
+  header :hover {
     border-radius: 10%;
-    color: rgb(104, 99, 255);
+    text-decoration:underline;
 }
 
   .header-right {
     float: right;
 }
-  
+ 
+/* efeito digitando */
+span{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-main{
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 10%;
+  color: lime;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 5s steps(550, end); 
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: white;
+}
+
+/* header responsivo */
 @media screen and (max-width: 500px) {
     header a {
       float: none;
@@ -44,3 +81,32 @@ header a {
       float: none;
     }
 }
+
+/* página de contato */
+#div-contato{
+  margin-top: 27%;
+}
+
+/* sub texto principal */
+.pMain{
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 5%;
+    line-height: 40px;
+    color: lime;
+    overflow: hidden;
+    width: 100%;
+    animation-duration: 6s;
+    text-align: center;
+    animation-name: aparecer;
+}
+@keyframes aparecer{
+  from{opacity: 0%;}
+  to{
+    opacity: 100%;
+  }
+}
+
+
+
+
