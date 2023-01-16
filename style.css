@@ -139,3 +139,68 @@ span{
   -moz-box-shadow: -1px 0px 35px -3px rgba(36,255,182,0.5);
   box-shadow: -1px 0px 35px -3px rgba(36,255,182,0.5);
 }
+
+#div-contato img{
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#div-contato p{
+  text-decoration: none;
+  font-size: 15px;
+  width: auto;
+  height: 20%;
+  margin: 0 auto;
+  text-align: center;
+  color: lime;
+
+}
+
+#div-contato h2{
+    color: lime;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#div-contato{
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  display:flex;
+  flex-flow: row wrap;
+  margin-top: 15%;
+}
+
+#div-contato span{
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+#div-contato h2{
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+#div-contato a{
+  text-decoration: none;
+}
+
+#h2a{
+  text-align: center;
+  color: lime;
+  margin-top: 10%;
+}
+
+footer{
+  color: lime;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20%;
+  font-size: 15px;
+  margin-bottom: 5%;
+}
