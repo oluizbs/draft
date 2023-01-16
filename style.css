@@ -107,6 +107,35 @@ span{
   }
 }
 
+#projetos{
+  text-decoration: none;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20%;
+}
 
+.a1{
+  text-decoration: none;
+  font-size: 20px;
+  width: 30%;
+  padding: 4%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5%;
+  color: lime;
+  border-width: 1px;
+  border-style:dashed;
+  border-color: lime;
+}
 
-
+#projetos :hover{
+  border-style: solid;
+  text-shadow: 0 0 0.5em rgb(165, 255, 176);
+  box-shadow: -1px 0px 35px -3px rgba(36,255,182,0.5);
+  -moz-box-shadow: -1px 0px 35px -3px rgba(36,255,182,0.5);
+  box-shadow: -1px 0px 35px -3px rgba(36,255,182,0.5);
+}
