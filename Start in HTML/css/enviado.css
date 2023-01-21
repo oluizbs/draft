@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5%;
+
+}
+.lab{
+    color: black;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 40%;
+    font-size: 25px;
+}
+.voltar {
+  background-color: rgb(73, 0, 0);
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  width: 310px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  opacity: 0.7;
+  font-size: 70px;
+  margin-top: 7%;
+}
+.voltar :hover{
+   color: rgb(241, 77, 77) ;
+   opacity: 10;
+   
+}

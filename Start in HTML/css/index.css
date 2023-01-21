@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+body{
+    background-image: url("https://images.wallpapersden.com/image/download/topography-abstract-black-texture_a2lmZmiUmZqaraWkpJRnbW1lrWZtZWU.jpg"); 
+    background-size: 100%, 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.botao1 {
+  background-color: rgb(53, 53, 53);
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  width: 310px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  opacity: 0.7;
+  font-size: 70px;
+  margin-top: 7%;
+}
+.botao1 :hover{
+   color: rgb(255, 255, 255) ;
+   opacity: 10;
+   
+}
+
+.botao2 {
+  background-color: rgb(53, 53, 53);
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  width: 310px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  opacity: 0.7;
+  font-size: 70px;
+  margin-top: 3%;
+}
+.botao2 :hover{
+   color: rgb(255, 255, 255) ;
+   opacity: 10;
+   
+}
+
+.botao3 {
+  background-color: rgb(53, 53, 53);
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  width: 310px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  opacity: 0.7;
+  font-size: 70px;
+  margin-top: 3%;
+}
+.botao3 :hover{
+   color: rgb(255, 255, 255) ;
+   opacity: 10;
+   
+}
+
+.botao4 {
+  background-color: rgb(53, 53, 53);
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  width: 310px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  opacity: 0.7;
+  font-size: 70px;
+  margin-top: 3%;
+}
+.botao4 :hover{
+   color: rgb(255, 255, 255) ;
+   opacity: 10;
+   
+}
